@@ -1,18 +1,23 @@
 {
-  "extends": "@repo/typescript-config/nextjs.json",
+  // This file is not used in compilation. It is here just for a nice editor experience.
+  "extends": "@tsconfig/docusaurus/tsconfig.json",
   "compilerOptions": {
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+    "types": [
+      "mocha"
+    ],
+    "baseUrl": ".",
+    "skipLibCheck": true
   },
   "include": [
-    "next-env.d.ts",
-    "next.config.mjs",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
+    "src",
+    "playwright"
   ],
-  "exclude": ["node_modules"]
+  "references": [
+    {
+      "path": "../coingecko"
+    },
+    {
+      "path": "../core"
+    }
+  ]
 }

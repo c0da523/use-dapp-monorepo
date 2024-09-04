@@ -7,6 +7,14 @@
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
+  "dependencies": {
+    "@changesets/cli": "^2.14.1",
+    "ethers": "5.7.2",
+    "prettier": "2.1.2"
+  },
+  "resolutions": {
+    "ethers": "5.7.2"
+  },
   "devDependencies": {
     "prettier": "^3.2.5",
     "turbo": "^2.1.1",
