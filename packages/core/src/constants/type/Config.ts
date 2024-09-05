@@ -140,7 +140,7 @@ export interface FullConfig {
 }
 
 /* eslint-disable @typescript-eslint/ban-types  */
-type RecursivePartial<Object, Keys extends {}> = {
+type RecursivePartial<Object, Keys extends Record<string, any>> = {
   [P in keyof Object]?: P extends keyof Keys ? RecursivePartial<Object[P], Keys[P]> : Object[P]
 }
 

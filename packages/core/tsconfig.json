@@ -1,26 +1,15 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "@repo/typescript-config/react-library.json",
   "compilerOptions": {
-    "types": [
-      "mocha",
-      "node"
-    ],
-    "target": "ES2018",
-    "outDir": "dist",
-    "module": "commonjs",
-    "composite": true,
-    "declaration": true,
-    "sourceMap": true,
-    "declarationMap": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "moduleResolution": "node",
-    "isolatedModules": true
+    "outDir": "dist"
   },
   "include": [
     "src",
     "src/**/*.json",
+    "!src/**/*.test",
+    "!src/testing",
     "internal",
     "generate-hooks",
+
   ]
 }

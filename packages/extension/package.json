@@ -5,7 +5,6 @@
   "scripts": {
     "start": "webpack serve --mode development",
     "build:dev": "webpack --mode development",
-    "build": "tsc --noEmit && rimraf build && webpack --mode production --progress",
     "lint": "pnpm lint:prettier --check && pnpm lint:eslint",
     "lint:fix": "prettier --write . && pnpm lint:eslint --fix",
     "lint:eslint": "eslint './{src,test}/**/*.{ts,tsx}'",

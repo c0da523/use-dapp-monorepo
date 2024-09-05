@@ -7,21 +7,7 @@ interface Props {
   onChange: (page: string) => void
 }
 
-export function Header({ page, onChange }: Props) {
-  return (
-    <Wrapper>
-      <Button onClick={() => onChange('events')} className={page === 'events' ? 'active' : ''}>
-        Events
-      </Button>
-      <Button onClick={() => onChange('abis')} className={page === 'abis' ? 'active' : ''}>
-        ABIs
-      </Button>
-      <Button onClick={() => onChange('nameTags')} className={page === 'nameTags' ? 'active' : ''}>
-        Name Tags
-      </Button>
-    </Wrapper>
-  )
-}
+
 
 const Wrapper = styled.header`
   font-size: 16px;
@@ -57,3 +43,18 @@ const Button = styled.button`
     background-color: ${Colors.Background};
   }
 `
+export function Header({ page, onChange }: Props) {
+  return (
+    <Wrapper>
+      <Button onClick={() => onChange('events')} className={page === 'events' ? 'active' : ''}>
+        Events
+      </Button>
+      <Button onClick={() => onChange('abis')} className={page === 'abis' ? 'active' : ''}>
+        ABIs
+      </Button>
+      <Button onClick={() => onChange('nameTags')} className={page === 'nameTags' ? 'active' : ''}>
+        Name Tags
+      </Button>
+    </Wrapper>
+  )
+}

@@ -8,17 +8,16 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "dependencies": {
-    "@changesets/cli": "^2.14.1",
-    "ethers": "5.7.2",
-    "prettier": "2.1.2"
+    "ethers": "5.7.2"
   },
   "resolutions": {
     "ethers": "5.7.2"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.14.1",
     "prettier": "^3.2.5",
     "turbo": "^2.1.1",
-    "typescript": "^5.4.5"
+    "typescript": "^5.5.4"
   },
   "packageManager": "pnpm@8.15.6",
   "engines": {
